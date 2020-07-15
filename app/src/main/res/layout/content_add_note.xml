@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddNoteActivity"
+    tools:showIn="@layout/activity_add_note">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/noteTitle"
+            android:layout_margin="15dp"
+            android:inputType="textCapWords|textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/noteSubtitle"
+            android:inputType="textCapWords|textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add new note"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+            />
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:id="@+id/viewButton"
+            android:layout_width="180dp"
+            android:text="Read all notes"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

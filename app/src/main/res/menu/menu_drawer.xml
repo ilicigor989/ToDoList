@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/ic_face_black_24dp"
+        android:title="Profile" />
+    <item
+        android:id="@+id/Register"
+        android:icon="@drawable/ic_register_add_black_24dp"
+        android:title="Register" />
+    <item
+        android:id="@+id/LogIn"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="LogIn" />
+
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_theme"
+            />
+        
+        <android.support.design.widget.TabLayout
+            app:tabMode="scrollable"
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tool_bar">
+            
+            <android.support.design.widget.TabItem
+                android:id="@+id/quick_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quick login"
+                android:icon="@drawable/brain2"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/facebook_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/search"
+                android:text="Gmail login"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/gmail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/facebook"
+                android:text="Facebook login"/>
+
+        </android.support.design.widget.TabLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

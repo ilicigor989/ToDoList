@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddPictureNoteActicity"
+    tools:showIn="@layout/activity_add_picture_note_acticity">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/add_photo"
+             />
+
+        <EditText
+            android:id="@+id/pictureText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/picture_hint"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:textAllCaps="false"
+            android:text="Add new Image Note"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
